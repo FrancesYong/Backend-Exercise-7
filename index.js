@@ -21,7 +21,7 @@ app.use(express.static('public'));          // file static
 //         // credentials: true
 //     })
 // )
-// app.use(cors());
+app.use(cors());
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
